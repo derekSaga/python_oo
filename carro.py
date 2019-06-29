@@ -50,3 +50,6 @@ class Carro():
             self.velocidade += velocidade
         else:
             print('O carro precisa estar ligado para ser acelerado !')
+
+    def __del__(self):
+        print('DESTRUINDO O CARRO !')
