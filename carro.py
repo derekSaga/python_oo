@@ -16,6 +16,9 @@ class Carro():
         self.is_ligado = False
         self.velocidade = 0
 
+    def __del__(self):
+        print('CARRO REMOVIDO DA MEMÓRIA')
+
     def abastecer(self, qtd_combustivel=0):
         """
         :type qtd_combustivel: float
@@ -47,6 +50,3 @@ class Carro():
             self.velocidade += velocidade
         else:
             print('O carro precisa estar ligado para ser acelerado !')
-
-    def __del__(self):
-        print('DESTRUINDO O CARRO !')
